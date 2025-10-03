@@ -6,7 +6,7 @@
                     alt="candy image">
                 <img class="absolute max-w-[105px] md:max-w-[115px] right-[0] sm:left-[50%] -ml-[57px] top-0"
                     src="/src/assets/HomeEventSecImages/ballon-top.png" alt="ballon image">
-                <img class="absolute  max-w-[60px] sm:max-w-[88px] right-[35%]  top-0" src="/src/assets/HomeEventSecImages/star-top.png"
+                <img class="absolute animation animate-spin duration-300  max-w-[60px] sm:max-w-[88px] right-[35%]  top-0" src="/src/assets/HomeEventSecImages/star-top.png"
                     alt="start image">
                 <div
                     class="grid sm:grid-cols-[1fr_1fr] md:grid-cols-[1.3fr_1fr] lg:grid-cols-[1.6fr_1fr] sm:gap-[40px] lg:gap-[93px]">

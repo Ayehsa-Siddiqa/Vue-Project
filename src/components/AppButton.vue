@@ -2,7 +2,7 @@
   <!-- Use router-link instead of <a> -->
   <RouterLink
     :to="to"
-    class="inline-block bg-primary text-white font-bold hover:bg-primary/90 transition"
+    class="inline-block bg-primary text-white font-bold hover:text-primary hover:bg-white transition duration-150 ease-in-out"
   >
     <slot />
   </RouterLink>

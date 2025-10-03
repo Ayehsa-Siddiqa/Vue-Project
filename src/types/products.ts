@@ -11,5 +11,6 @@ export interface Product {
   isSale?: boolean;
   isGlutenFree?: boolean;
   attribute:string,
-  category:string
+  category:string,
+  slug: string
 }

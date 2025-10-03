@@ -6,13 +6,13 @@
         <!-- Content -->
         <div class="banner_text_box absolute w-full h-full top-0 left-0">
             <div class="custom_container h-full ">
-                <div class="text_inner_box h-full flex flex-col justify-center items-start">
-                    <h2 class="text-white font-normal leading-tight font-caprasimo">
+                <div class="text_inner_box  py-[40px] px-[15px] h-full flex flex-col justify-center items-start ">
+                    <h2 class="mb-[16px] text-white font-normal leading-tight font-caprasimo">
                         Get Your Favorite <br />
                         Candies Delivered to <br />
                         Your Door
                     </h2>
-                    <p class="text-white font-sans font-normal">
+                    <p class="tracking-normal text-white font-sans font-normal mb-[20px] md:mb-[26px] text-[16px] md:text-[18px] leading-[22px] md:leading-[26px] max-w-[651px]">
                         The taste of sweetness remains in your mouth when you have
                         overcome all the difficulties and mistakes in your life,
                         and revealed your truth.
@@ -35,29 +35,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-.text_inner_box {
-    padding: 40px 15px;
-}
-
-.text_inner_box h2 {
-    margin-bottom: 16px;
-}
-
-.text_inner_box p {
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: 0;
-    margin-bottom: 25px;
-    max-width: 651px;
-}
-
-@media(max-width:768px) {
-    .text_inner_box p {
-        font-size: 16px;
-        line-height: 22px;
-        margin-bottom: 20px;
-    }
-}
-
-</style>
+ 

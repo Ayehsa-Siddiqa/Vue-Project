@@ -1,10 +1,12 @@
 <template>
   <header class="float-left block w-full">
     <!-- Ticker -->
-    <div v-show="showTicker" class="header_ticker bg-primary transform transition-transform  duration-400 ease-in-out">
+    <div v-show="showTicker"
+      class="header_ticker py-[8px] lg:py-[10px] px-[15px] bg-primary transform transition-transform duration-400 ease-in-out">
       <div class="custom_container">
         <div class="flex items-center justify-between">
-          <p class="mx-auto flex justify-center gap-3 align-middle text-center text-white font-bold font-sans">
+          <p
+            class="mx-auto flex justify-center gap-3 align-middle text-center text-white font-bold font-sans text-[14px] md:text-[16px] leading-[100%] tracking-normal">
             <span class="hidden sm:block">🎄🎄🎄</span> Give the gift of sweet joy with the Katjes Advent calendar <span
               class="hidden sm:block">🎄🎄🎄</span>
           </p>
@@ -14,17 +16,18 @@
       </div>
     </div>
     <!-- Main Navbar -->
-    <nav class="main_header_bar bg-white">
+    <nav class="main_header_bar py-[16px] px-[15px] bg-white">
       <div class="custom_container mx-auto">
         <div class="flex justify-between items-center">
           <!-- Logo -->
           <div class="header-logo flex gap-2 flex-shrink-0">
             <!-- Mobile Hamburger -->
-            <button class="lg:hidden text-2xl focus:outline-none" @click="toggleMobileMenu">
+            <button class="lg:hidden focus:outline-none font-bold text-primary text-[20px]" @click="toggleMobileMenu">
               ☰
             </button>
             <RouterLink to="/">
-            <img class="object-contain w-full" src="/src/assets/logo/header-logo.png" alt="header logo">
+              <img class="object-contain w-full max-w-[136px] lg:max-w-[160px]" src="/src/assets/logo/header-logo.png"
+                alt="header logo">
             </RouterLink>
           </div>
 
@@ -35,17 +38,23 @@
                 {{ item.label }}
               </RouterLink>
             </li>
-    
+
           </ul>
 
           <!-- Icons -->
           <div class="header_list2 flex items-center">
-            <button class="search-icon focus:outline-none "> <img class="block" src="../assets/header-icons/search.png"
-                alt="cart icon img"> </button>
-            <button class="user_icon focus:outline-none"> <img class="block" src="../assets/header-icons/user.png"
-                alt="cart icon img">
+            <div class="header_search relative flex itesm-center">
+              <HeaderSearch v-if="showSearch" @close="toggleSearch" @search="handleSearch" />
+
+              <button class="search-icon focus:outline-none cursor-pointer" @click="toggleSearch"> <img class="block"
+                  src="../assets/header-icons/search.png" alt="search icon img">
+              </button>
+            </div>
+
+            <button class="user_icon focus:outline-none cursor-pointer"> <img class="block"
+                src="../assets/header-icons/user.png" alt="user icon img">
             </button>
-            <button class="cart_icon relative focus:outline-none">
+            <button class="cart_icon relative focus:outline-none cursor-pointer">
               <img class="block" src="../assets/header-icons/cart.png" alt="cart icon img">
               <span
                 class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold w-4.5 h-4.5  flex items-center justify-center rounded-full">0</span>
@@ -64,7 +73,8 @@
         </button>
         <ul class="flex list-none flex-col space-y-4 p-4 font-medium text-gray-700">
           <li v-for="(item, i) in navItems" :key="i">
-            <RouterLink :to="item.link"  class="text-white font-sans hover:text-primary font-bold">
+            <RouterLink :to="item.link"
+              class="text-white font-sans hover:text-primary font-bold leading-[30px] text-[20px]">
               {{ item.label }}
             </RouterLink>
           </li>
@@ -79,13 +89,16 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 import { RouterLink } from "vue-router";
+import HeaderSearch from "./HeaderSearch.vue";
 export default defineComponent({
   name: "Header",
-  components: { RouterLink },
+  components: { RouterLink, HeaderSearch },
   data() {
     return {
       showTicker: true as boolean,
       mobileMenuOpen: false as boolean,
+      showSearch: false as boolean,
+
       navItems: [
         { label: "Shop", link: "/shop" },
         { label: "Pick & Mix", link: "/shop/pick-mix" },
@@ -104,29 +117,18 @@ export default defineComponent({
     toggleMobileMenu(): void {
       this.mobileMenuOpen = !this.mobileMenuOpen;
     },
+    toggleSearch(): void {  
+      this.showSearch = !this.showSearch;
+    },
+    handleSearch(query: string) {
+      console.log("User typed:", query);
+    }
+
   },
 });
 </script>
 
 <style scoped>
-.header_ticker {
-  padding: 10px 15px;
-}
-
-.header_ticker {
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0;
-}
-
-.main_header_bar {
-  padding: 16px 15px;
-}
-
-.header-logo img {
-  max-width: 160px;
-}
-
 .header_links li {
   margin-right: 56px;
 }
@@ -182,25 +184,6 @@ export default defineComponent({
 
   .user_icon {
     margin: 0 14px;
-  }
-}
-
-@media(max-width:1024px) {
-  .header-logo img {
-    max-width: 136px;
-  }
-
-  .header_ticker {
-    padding: 8px 15px;
-  }
-
-  .header_ticker {
-    font-size: 14px;
-  }
-
-  .mobile_nav ul li a {
-    font-size: 20px;
-    line-height: 30px;
   }
 }
 </style>

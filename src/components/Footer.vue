@@ -55,7 +55,7 @@ const toggleSection = (index: number) => {
                         Ready to Join the Sweet Side? Become a Franchise Partner! 🍭
                     </p>
                     <a href="#"
-                        class="bg-primary text-white font-bold rounded-[12px] px-[25px] lg:px-[37px] py-[8px] text-[14px] lg:text-[16px] leading-[24px] shrink-0">
+                        class="bg-primary hover:bg-white hover:text-primary transition duration-300 ease-in-out text-white font-bold rounded-[12px] px-[25px] lg:px-[37px] py-[8px] text-[14px] lg:text-[16px] leading-[24px] shrink-0">
                         Get Info
                     </a>
                 </div>

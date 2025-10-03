@@ -1,8 +1,10 @@
 <template>
-  <div class="product_card  w-[50%] md:w-[33.33%] lg:w-[25%] px-[6px] lg:px-[15px] ">
-    <figure class="m-0">
-      <img :src="product.image" :alt="product.title" class="w-full object-cover" />
+  <div class="product_card  w-[50%] md:w-[33.33%] lg:w-[25%] px-[6px] lg:px-[15px] group transition ">
+    
+    <figure class="m-0 cursor-pointer" @click="goToDetails(product)">
+      <img :src="product.image" :alt="product.title" class="w-full object-cover group-hover:scale-105 transition duration-300" />
     </figure>
+    
     <h5
       class="product_name max-w-[200px] lg:max-w-[240px] text-dark-grey font-bold font-sans mb-[8px] mt-[16px] text-[14px] lg:text-[16px] leading-[20px] lg:leading-[24px] tracking-normal">
       {{ product.title }}</h5>
@@ -31,12 +33,24 @@
 </template>
 
 <script lang="ts" setup>
+import { useRouter } from "vue-router";
+import { useProductStore } from "../store/productStore";
 import type { Product } from "../types/products";
-defineProps<{ product: Product }>();
+
+//props to recieve data 
+const props = defineProps<{ product: Product }>();
+const router = useRouter();
+const productStore = useProductStore();
+
+// function to move the detail page
+function goToDetails(product: Product) {
+  productStore.selectProductBySlug(product.slug); // set selected product
+  router.push({ name: "ProductDetails", params: { slug:product.slug } }); // navigate
+}
 </script>
 
 <style scoped>
-i {
+i{
   -webkit-text-stroke: 2px #E92827;
   font-weight: 600;
   font-size: 10px;

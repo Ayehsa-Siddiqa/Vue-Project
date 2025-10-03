@@ -19,6 +19,12 @@ export const routes: RouteRecordRaw[] = [
     component: () => import("../pages/Dashboard.vue"),
     meta: { layout: "admin" },
   },
+      {
+    path: "/product/:slug",
+    name: "ProductDetails",
+    component: () => import("../pages/ProductDetail.vue"),
+    meta: { layout: "default" },
+  },
   {
     path: "/:pathMatch(.*)*",
     name: "NotFound",

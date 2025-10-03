@@ -9,7 +9,7 @@
 
             <div class="category_main  gap-y-[40px] lg:gap-[80px] -mx-4 -sm-mx-5 -lg:mx-3 flex flex-wrap justify-center lg:justify-between">
                 <div v-for="category in categories" :key="category.id"
-                    class="category_box px-4 sm:px-5 lg:px-3 flex rounded-lg  group  transition">
+                    class="category_box px-4 sm:px-5 lg:px-3 flex rounded-lg  group transition">
                     <RouterLink :to="category.link" class="flex flex-col items-center w-full h-full">
                         <!-- Image -->
                         <figure class="w-full lg:w-[180px]">
