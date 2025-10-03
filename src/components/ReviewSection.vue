@@ -115,15 +115,20 @@ export default defineComponent({
 
         // Generate initials from name (first letter of first + last word)
         const getInitials = (name: string): string => {
-            const parts = name.trim().split(" ");
-            if (parts.length === 1) {
-                return parts[0].charAt(0).toUpperCase();
-            }
-            return (
-                parts[0].charAt(0).toUpperCase() +
-                parts[parts.length - 1].charAt(0).toUpperCase()
-            );
+            if (!name) return ""; // handle empty string
+
+            const parts = name.trim().split(" ").filter(part => part.length > 0); // remove empty parts
+
+            if (parts.length === 0) return ""; // no valid words
+
+            const firstInitial = parts[0]?.charAt(0).toUpperCase() || "";
+            if (parts.length === 1) return firstInitial;
+
+            const lastInitial = parts[parts.length - 1]?.charAt(0).toUpperCase() || "";
+            return firstInitial + lastInitial;
         };
+
+
 
         onMounted(() => {
 

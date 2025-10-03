@@ -38,7 +38,7 @@ import { useProductStore } from "../store/productStore";
 import type { Product } from "../types/products";
 
 //props to recieve data 
-const props = defineProps<{ product: Product }>();
+ defineProps<{ product: Product }>();
 const router = useRouter();
 const productStore = useProductStore();
 
