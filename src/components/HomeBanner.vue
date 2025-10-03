@@ -1,7 +1,7 @@
 <template>
     <section class="relative w-full float-left block ">
         <figure>
-            <img class="w-full h-full  min-h-[340px] object-cover" src="/src/assets/home-banner/Slider.png" alt="banner-img" fetchpriority="high">
+            <img class="w-full h-full  min-h-[340px] object-cover" src="/images/home-banner/Slider.png" alt="banner-img" fetchpriority="high">
         </figure>
         <!-- Content -->
         <div class="banner_text_box absolute w-full h-full top-0 left-0">

@@ -26,7 +26,7 @@
               ☰
             </button>
             <RouterLink to="/">
-              <img class="object-contain w-full max-w-[136px] lg:max-w-[160px]" src="/src/assets/logo/header-logo.png"
+              <img class="object-contain w-full max-w-[136px] lg:max-w-[160px]" src="/images/logo/header-logo.png"
                 alt="header logo">
             </RouterLink>
           </div>
@@ -47,15 +47,15 @@
               <HeaderSearch v-if="showSearch" @close="toggleSearch" @search="handleSearch" />
 
               <button class="search-icon focus:outline-none cursor-pointer" @click="toggleSearch"> <img class="block"
-                  src="../assets/header-icons/search.png" alt="search icon img">
+                  src="/images/header-icons/search.png" alt="search icon img">
               </button>
             </div>
 
             <button class="user_icon focus:outline-none cursor-pointer"> <img class="block"
-                src="../assets/header-icons/user.png" alt="user icon img">
+                src="/images/header-icons/user.png" alt="user icon img">
             </button>
             <button class="cart_icon relative focus:outline-none cursor-pointer">
-              <img class="block" src="../assets/header-icons/cart.png" alt="cart icon img">
+              <img class="block" src="/images/header-icons/cart.png" alt="cart icon img">
               <span
                 class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold w-4.5 h-4.5  flex items-center justify-center rounded-full">0</span>
             </button>

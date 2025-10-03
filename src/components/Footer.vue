@@ -66,7 +66,7 @@ const toggleSection = (index: number) => {
                     <div class="footer_logo_box">
                         <figure><img
                                 class="object-contain mx-auto sm:mx-0 block mb-[18px] max-w-[140px] md:max-w-[160px]"
-                                src="/src/assets/logo/header-logo.png" alt="footer logo"></figure>
+                                src="/images/logo/header-logo.png" alt="footer logo"></figure>
                         <p
                             class="text-center sm:text-left mb-3 sm:mb-0 font-sans text-white uppercase text-[12px] leading-[19px]">
                             we bring joy,

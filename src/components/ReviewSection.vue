@@ -64,7 +64,7 @@ export default defineComponent({
                 review:
                     "My daughter absolutely adores the costume; she proudly refers to herself as 'the true princess.' Thank you so much! We look forward to purchasing more.",
                 rating: 5,
-                image: "/src/assets/ReviewSecImages/1.png",
+                image: "/images/ReviewSecImages/1.png",
             },
             {
                 id: 2,
@@ -73,7 +73,7 @@ export default defineComponent({
                 review:
                     "The quality is outstanding, and the costume looks incredibly realistic. The sizes run a bit small compared to the chart, especially the skirt, but overall still great.",
                 rating: 4,
-                image: "/src/assets/ReviewSecImages/5.png",
+                image: "/images/ReviewSecImages/5.png",
             },
             {
                 id: 3,
@@ -82,7 +82,7 @@ export default defineComponent({
                 review:
                     "Thank you, Party Corner, for the amazing Isabella and Mirabel costumes! My girls had a blast being these characters. The fabric quality and stitching are top-notch.",
                 rating: 5,
-                image: "/src/assets/ReviewSecImages/2.png",
+                image: "/images/ReviewSecImages/3.png",
             },
             {
                 id: 4,
@@ -91,7 +91,7 @@ export default defineComponent({
                 review:
                     "Great value for the price! The dresses were super fast. I just wish it came with additional items instead of just cupcake toppers; it felt a bit lacking.",
                 rating: 4,
-                image: "/src/assets/ReviewSecImages/3.png",
+                image: "/images/ReviewSecImages/3.png",
             },
             {
                 id: 5,
@@ -100,7 +100,7 @@ export default defineComponent({
                 review:
                     "The quality is outstanding, and the costume looks incredibly realistic. The sizes run a bit small compared to the chart, especially the skirt, but overall still great.",
                 rating: 4,
-                image: "/src/assets/ReviewSecImages/4.png",
+                image: "/images/ReviewSecImages/4.png",
             },
             {
                 id: 6,
@@ -109,7 +109,7 @@ export default defineComponent({
                 review:
                     "The quality is outstanding, and the costume looks incredibly realistic. The sizes run a bit small compared to the chart, especially the skirt, but overall still great.",
                 rating: 4,
-                image: "/src/assets/ReviewSecImages/5.png",
+                image: "/images/ReviewSecImages/5.png",
             },
         ];
 

@@ -2,11 +2,11 @@
     <section class="event_section float-left w-full block px-[15px] mb-[40px] md:mb-[60px] lg:mb-[94px]">
         <div class="custom_container">
             <div class="event_sec_inner relative bg-[#FFECEC] rounded-2xl">
-                <img class="absolute max-w-[55px] sm:max-w-[75px] :md:max-w-[112px] left-0 top-0" src="/src/assets/HomeEventSecImages/candy.png"
+                <img class="absolute max-w-[55px] sm:max-w-[75px] :md:max-w-[112px] left-0 top-0" src="/images/HomeEventSecImages/candy.png"
                     alt="candy image">
                 <img class="absolute max-w-[105px] md:max-w-[115px] right-[0] sm:left-[50%] -ml-[57px] top-0"
-                    src="/src/assets/HomeEventSecImages/ballon-top.png" alt="ballon image">
-                <img class="absolute animation animate-spin duration-300  max-w-[60px] sm:max-w-[88px] right-[35%]  top-0" src="/src/assets/HomeEventSecImages/star-top.png"
+                    src="/images/HomeEventSecImages/ballon-top.png" alt="ballon image">
+                <img class="absolute animation animate-spin duration-300  max-w-[60px] sm:max-w-[88px] right-[35%]  top-0" src="/images/HomeEventSecImages/star-top.png"
                     alt="start image">
                 <div
                     class="grid sm:grid-cols-[1fr_1fr] md:grid-cols-[1.3fr_1fr] lg:grid-cols-[1.6fr_1fr] sm:gap-[40px] lg:gap-[93px]">
@@ -24,14 +24,14 @@
                         <AppButton to="/shop">Explore Our Collections</AppButton>
                     </div>
                     <figure>
-                        <img src="/src/assets/HomeEventSecImages/products.png"
+                        <img src="/images/HomeEventSecImages/products.png"
                             class="w-full h-full rounded-r-2xl object-cover object-left" alt="products image">
                     </figure>
                 </div>
                 <img class="absolute max-w-[40px] md:max-w-[73px] left-[15px] md:left-[23px]  bottom-0"
-                    src="/src/assets/HomeEventSecImages/star-bottom.png" alt="star image">
+                    src="/images/HomeEventSecImages/star-bottom.png" alt="star image">
                 <img class="absolute max-w-[140px]  lg:max-w-[193px] left-[50%]  bottom-0"
-                    src="/src/assets/HomeEventSecImages/ballonbottom.png" alt="ballon image">
+                    src="/images/HomeEventSecImages/ballonbottom.png" alt="ballon image">
             </div>
         </div>
     </section>
