@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-caprasimo: "Caprasimo", sans-serif;
+  --font-sans: "DM Sans", sans-serif;
+  --color-primary: #E92827;
+  --color-dark-grey: #303030;
+}
+
+.custom_container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 2px;
+}
+
+@media(max-width:1024px) {
+  h2 {
+    font-size: 44px;
+  }
+
+  h3 {
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 34px;
+  }
+
+  h3 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+}
