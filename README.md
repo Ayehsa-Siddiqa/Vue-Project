@@ -27,27 +27,49 @@ The app currently focuses on displaying candy products with detailed views and s
 
 ## 🧱 Project Structure
 
-public
-├─ images/ # Static assets (images, icons, etc.)
-src/
-├─ components/ # Reusable UI components
-├─ layouts/ # App layouts
-│ ├─ DefaultLayout.vue # Public pages (Home, Shop, Product Detail)
-│ └─ AdminLayout.vue # Admin dashboard layout
-├─ pages/ # Page components
-│ ├─ Home.vue
-│ ├─ Shop.vue
-│ ├─ ProductDetail.vue
-│ └─ Admin/
-│ ├─ Dashboard.vue
-│ └─ Products.vue
-├─ router/ # Vue Router setup
-│ └─ index.ts
-├─ stores/ # Pinia stores
-│ └─ productStore.ts
-├─ types/ # TypeScript interfaces and types
-├─ App.vue # Root component
-└─ main.ts # Application entry point
+# 🗂️ Project Folder Structure
+
+Goodies-Swedish-Candy/
+│
+├── public/                    # Public assets (images,icons served directly)
+│
+├── src/     
+│   │
+│   ├── components/            # Reusable UI components
+│   │
+│   ├── layouts/               # App layouts
+│   │   ├── DefaultLayout.vue  # Public pages (Home, Shop, Product Detail)
+│   │   └── AdminLayout.vue    # Admin dashboard layout
+│   │
+│   ├── pages/                 # Page components
+│   │   ├── Home.vue
+│   │   ├── Shop.vue
+│   │   ├── ProductDetail.vue
+│   │   ├── Dashboard.vue
+│   │   └── PageNotFound.vue
+│   │
+│   ├── router/                # Vue Router setup
+│   │   └── index.ts
+|   |   └── routes.ts        
+│   │
+│   ├── store/                 # Pinia stores
+│   │   └── productStore.ts
+│   │
+│   ├── types/                 # TypeScript interfaces and types
+│   │
+│   ├── utils/                 # Helper functions (future use)
+│   │
+│   ├── App.vue                # Root component
+│   └── main.ts                # Application entry point
+│   └── style.css              # Css
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
 
 
 
